@@ -28,6 +28,9 @@
 
 \section*{Executive Summary}
 
+The first paragraph here should provide the what you want to measure along with the why.
+The second should include the how (the equipment/hall/energy) and for how long (i.e. the number of PAC days being requested).    While this needs to be a high level summary and should not exceed one page, it should provide enough information that the reader understands what this experiment is seeking to accomplish and the resources to do it.
+
 \newpage
 
 \section{Introduction}
@@ -59,21 +62,28 @@ For the large acceptance devises such as CLAS or GlueX this section should provi
 
 Beamtime request should be made assuming the accelerator avaliable at all times: an efficency factor is applied later in the procees.    This does need to include the time needed to make changes to the experiment while the beam is avalible such are moving spectrometers, making target changes, etc. as well as calibration measurements.
 
-\begin{spreadtab}{{tabularx}{\textwidth}{C{0.1\textwidth}C{0.1\textwidth}XC{0.15\textwidth}C{0.15\textwidth}C{0.1\textwidth}}}
+\begin{table}[h!]
+    \centering
+\begin{tabular}{cccccc}
+Beam   & Beam    & Beam         & Target   & Material   & Beamtime   \\
+Energy & Current & Requirements & Material & Thickness  & (days) \\
+(GeV)  & (uA)    &              &          & (mg/cm$^2$ &        \\
 \hline
-    @Beam Energy & @Beam Current & @Beam Requirements & @Target Material & @Material Thickness & @Time \\ 
-    @(MeV) & @($\mu$A) & @ & @ & @(mg/cm$^2$) & @(hrs) \\ \hline
-    8.8 & 0.085 & @Polarized   & @NH3    & 300 & 183 \\
-    4.4 & 0.085 & @Unpolarized & @Carbon & 300 & 12 \\
-    8.8 & 0.085 & @Polarized   & @Carbon & 300 & 2 \\
-    4.4 & 0.085 & @Unpolarized & @NH3    & 300 & 266 \\ \hline
-    \multicolumn{5}{l}{@Total time} & \multicolumn{1}{c}{:={sum(f2:[0,-1])}}
-\end{spreadtab}
+8.8    & 10      & Unpolarized  & Carbon   & 100        & 0.5    \\
+       &         &              &          &            &        \\
+       &         &              &          &            &        \\
+\hline
+Total Time &     &              &          &            & (TOTAL) \\
+\end{tabular}
+    \caption{Add an many lines are you need here to give the targets and energy you will be using.    }
+    \label{tab:my_label}
+\end{table}
 
+In additon to the time with beam on target, also provide information about the amount of time needed for calibrations.    Also time for making configuration changes while the beam is available.
 
 \section{Summary}
 
-Provide a short, high-level summary of the proposal and how this experiments help improve our understanding of the topic and conclude with the number of PAC days being requested.
+Provide a short, high-level summary of the proposal and how this experiments help improve our understanding of the topic and conclude with the number of PAC days being requested in days (whole numbers only).
 
 %
 %
@@ -86,7 +96,7 @@ Provide a short, high-level summary of the proposal and how this experiments hel
 % It is recommended to use bibtex for references.    The inspirehep.net site has most of the papers and the by clicking "cite" provides bibtex formatted citation information. 
 %
 %
-\newpage
+%\newpage
 \bibliographystyle{unsrt}
 \bibliography{references}
 \end{document}
