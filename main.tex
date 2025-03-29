@@ -23,20 +23,29 @@
 The first paragraph here should provide the what you want to measure along with the why.
 The second should include the how (the equipment/hall/energy) and for how long (i.e. the number of PAC days being requested).    While this needs to be a high level summary and should not exceed one page, it should provide enough information that the reader understands what this experiment is seeking to accomplish and the resources to do it.
 
+\tableofcontents
+
 \newpage
 
 \section{Introduction}
 
 Provide a general introduction to experiment and the physics that this experiment is trying to address.   Through-out this document being concise and clear is extremely helpful to the reader and help people accurate judge the merits of the proposal.    
 
+Labels for equations and figures should be clickable, such as Eqn.~\ref{eq:massenergy}.
+\begin{equation}
+\label{eq:massenergy}
+    E=mc^2
+\end{equation}
+
 \section{Physics Motivation}
 
-This should you should provide the theoritical and/or phenomological reason for performing this measurement.
+This should you should provide the theoretical and/or phenomenological reason for performing this measurement.  
+
+
 
 \section{Experimental Details}
 
-In this section you should provide about the experiment.   For standard equipment, you can just provide references.  For example, here is a reference for the parameters of 
-the CEBAF 12GeV accelerator ~\cite{Adderley:2024czm} and it also an example of how to use bibtex.  
+In this section you should provide about the experiment.   For standard equipment, you can just provide references.  For example, here is a reference for the parameters of the CEBAF 12GeV accelerator ~\cite{Adderley:2024czm} and it also an example of how to use bibtex.  The preferred location to obtain bibtex files is inspire, which will give more uniform format than different journals.
 
 \subsection{Required Equipment}
 
@@ -44,34 +53,34 @@ If using standard equipment this can be short, BUT please be sure to note detail
 
 \subsection{Statistics and Systematics}
 
-Provide details about the both the statistic and systematic uncertainties expected in the measurement.    The level of detail required will depend on if this is a measurement with statistical uncertainties that are far larger then the systematics or if this is a systematics limited measurement.
+Provide details about the both the statistic and systematic uncertainties expected in the measurement.    The level of detail required will depend on if this is a measurement with statistical uncertainties that are far larger than the systematics or if this is a systematics limited measurement.
 
 \subsection{Kinematics}
 
-For the large acceptance devises such as CLAS or GlueX this section should provide the field details but for the spectrometer halls, please provided both momentums and angles that will be needed.   These details are important to make sure there is no interfearance or other limitations that would make getting to the experiments desired kinematics.    
+For the large acceptance devises such as CLAS or GlueX this section should provide the field details but for the spectrometer halls, please provided both momenta and angles that will be needed.   These details are important to make sure there is no interference or other limitations that would make getting to the experiments desired kinematics.    
 
 \section{Beamtime Request} 
 
-Beamtime request should be made assuming the accelerator avaliable at all times: an efficency factor is applied later in the procees.    This does need to include the time needed to make changes to the experiment while the beam is avalible such are moving spectrometers, making target changes, etc. as well as calibration measurements.
+Beamtime request should be made assuming the accelerator available at all times: an efficiency factor is applied later in the process.    This does need to include the time needed to make changes to the experiment while the beam is available such are moving spectrometers, making target changes, etc. as well as calibration measurements.
 
 \begin{table}[h!]
     \centering
 \begin{tabular}{cccccc}
-Beam   & Beam    & Beam         & Target   & Material   & Beamtime   \\
-Energy & Current & Requirements & Material & Thickness  & (days) \\
-(GeV)  & (uA)    &              &          & (mg/cm$^2$ &        \\
+Beam   & Beam    & Beam         & Target   & Material    & Beamtime   \\
+Energy & Current & Requirements & Material & Thickness   & (days) \\
+(GeV)  & (uA)    &              &          & (mg/cm$^2$) &        \\
 \hline
-8.8    & 10      & Unpolarized  & Carbon   & 100        & 0.5    \\
-       &         &              &          &            &        \\
-       &         &              &          &            &        \\
+8.8    & 10      & Unpolarized  & Carbon   & 100         & 0.5    \\
+       &         &              &          &             &        \\
+       &         &              &          &             &        \\
 \hline
-Total Time &     &              &          &            & (TOTAL) \\
+Total Time &     &              &          &             & (TOTAL) \\
 \end{tabular}
     \caption{Add an many lines are you need here to give the targets and energy you will be using.    }
     \label{tab:my_label}
 \end{table}
 
-In additon to the time with beam on target, also provide information about the amount of time needed for calibrations.    Also time for making configuration changes while the beam is available.
+In addition to the time with beam on target, also provide information about the amount of time needed for calibrations.    Also time for making configuration changes while the beam is available.
 
 \section{Summary}
 
@@ -89,7 +98,7 @@ Provide a short, high-level summary of the proposal and how this experiments hel
 %
 %
 %\newpage
+%\bibliographystyle{apsrev4-1} % For clickable links in the bibliography
 \bibliographystyle{unsrt}
 \bibliography{references}
 \end{document}
-
